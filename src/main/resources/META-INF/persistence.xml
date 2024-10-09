@@ -3,12 +3,20 @@
              xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
     <persistence-unit name="backd2w3">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>marcowidesott.entities.Event</class>
+        <class>marcowidesott.entities.Location</class>
+        <class>marcowidesott.entities.Persona</class>
+        <class>marcowidesott.entities.Partecipazione</class>
+
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/backd2w3"/>
-            <property name="javax.persistence.jdbc.user" value="postgres"/>
-            <property name="javax.persistence.jdbc.password" value="1234"/>
-            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/tuo_database"/>
+            <property name="jakarta.persistence.jdbc.user" value="tuo_username"/>
+            <property name="jakarta.persistence.jdbc.password" value="tuo_password"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>

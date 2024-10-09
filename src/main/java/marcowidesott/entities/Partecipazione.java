@@ -10,14 +10,12 @@ public class Partecipazione {
     private long id;
 
     @ManyToOne
-    @JoinColumn(name = "persona_id")
     private Persona persona;
 
     @ManyToOne
-    @JoinColumn(name = "evento_id")
     private Event evento;
 
-    private String stato; // CONFERMATA, DA_CONFERMARE
+    private String stato;
 
     public Partecipazione() {
     }
@@ -42,5 +40,15 @@ public class Partecipazione {
 
     public String getStato() {
         return stato;
+    }
+
+    @Override
+    public String toString() {
+        return "Partecipazione{" +
+                "id=" + id +
+                ", persona=" + persona +
+                ", evento=" + evento +
+                ", stato='" + stato + '\'' +
+                '}';
     }
 }
