@@ -34,11 +34,11 @@
             <artifactId>postgresql</artifactId>
             <version>42.7.4</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.webjars.npm/faker -->
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>faker</artifactId>
-            <version>4.1.0</version>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
         </dependency>
 
 

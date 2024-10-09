@@ -1,11 +1,13 @@
 package marcowidesott;
 
 
+import com.github.javafaker.Faker;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import marcowidesott.dao.EventsDAO;
 import marcowidesott.entities.Event;
+import marcowidesott.entities.TipoEvento;
 
 import java.time.LocalDate;
 import java.util.Locale;
@@ -13,7 +15,7 @@ import java.util.Random;
 
 
 public class Application {
-    private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("u4d12");
+    private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("backd2w3");
 
     public static void main(String[] args) {
         EntityManager em = emf.createEntityManager();
